@@ -1,1 +1,6 @@
 /target
+.classpath
+.settings/
+.loadpath
+*.launch
+
