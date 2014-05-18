@@ -1,4 +1,4 @@
-Hybrid async-sync redis connection multiplexer
+Redis multiplexer
 ==================
 Accepts large number of client connections on the netty4 side.
 
