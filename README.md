@@ -29,6 +29,15 @@ This project makes extensive use of lambdas, so **Java 8** is required.
   -jMinIdle (-n) [int] jedis minimum connection idle time (0)
   -jMaxIdle (-m) [int] jedis maximum connection idle time (8)
 ```
+
+### Warnings
+* This is still experimental, many commands are supported, but less frequently used commands may not yet be implemented.
+* PubSub: handle with care, it uses one thread for each blocked connection. Redis-side connection is correctly released if client-side connection breaks.
+
+### Todo
+* Port the rest of the non blocking commands to Jedis
+* Port the rest of the blocking commands to Jedis (BLPOP, BRPOP, ... )
+
 ### Credits
 * Netty project: http://netty.io
 * Sam Pullara's redis protocol for Netty: https://github.com/spullara/redis-protocol
